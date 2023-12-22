@@ -1,0 +1,17 @@
+th {
+    color: rgb(149, 75, 75)(18, 16, 16);
+    padding: 10px;
+
+}
+thead {
+    background-color: rgba(0, 255, 255, 0.142);
+}
+td {
+    padding: 10px;
+}
+
+h3 {
+    padding: 2px;
+    margin-left: 35px;
+    align-items: center;
+}

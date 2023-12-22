@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details Entry Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        select {
+            height: 36px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Details Entry Form</h1>
+    <form action="process_form.php" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" required>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" required>
+
+        <label for="student_id">Student ID:</label>
+        <input type="text" name="student_id" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" required>
+
+        <label for="course">Course:</label>
+        <select name="course">
+            <option value="Computer Science">Computer Science</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Mathematics">Mathematics</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
